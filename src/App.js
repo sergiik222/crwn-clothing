@@ -29,14 +29,11 @@ class  App extends React.Component {
                             ...snapshot.data()
                         }
                     }, () => {
-                        console.log("State:", this.state)
+                       // console.log("State:", this.state)
                     })
-                    console.log("State 2:", this.state)
                 })
             }else{
-                this.setState({currentUser: userAuth}, () => {
-                    console.log("State:", this.state)
-                })
+                this.setState({currentUser: userAuth})
             }
         })
     }
